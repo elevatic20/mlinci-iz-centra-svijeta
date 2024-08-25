@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahvala</title>
+    <style>
+        :root {
+            --dark-red: #8B0000;
+            --dark-red-nav: #740202;
+            --wheat: #F5DEB3;
+            --white: #ffffff;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--dark-red);
+        }
+
+        .container {
+            text-align: center;
+            background: var(--dark-red-nav);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: var(--wheat);
+        }
+
+        p {
+            color: var(--white);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: var(--dark-red-nav);
+            background-color: var(--wheat);
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            scale: 1.05;
+            background-color: #dcc69e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hvala na vašoj poruci!</h1>
+        <p>Vaša poruka je uspješno poslana. Naš tim će vam odgovoriti u najkraćem mogućem roku.</p>
+        <a href="index.html" class="btn">Povratak na početnu stranicu</a>
+    </div>
+</body>
+
+</html>

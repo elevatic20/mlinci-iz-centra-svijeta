@@ -198,7 +198,10 @@
                 <!-- Kontakt Forma -->
                 <div class="contact-form">
                     <h3>Kontakt forma</h3>
-                    <form action="" method="POST">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                    
+                        <input type="hidden" name="access_key" value="b5c171a4-d88a-4133-8ef3-38720c24db24">
+
                         <div class="form-group">
                             <label for="name">Ime i prezime</label>
                             <input type="text" id="name" name="name" placeholder="Ime i prezime" required>
@@ -218,9 +221,9 @@
                             <label for="hp">Leave this field empty</label>
                             <input type="text" id="hp" name="hp">
                         </div>
-                        <!-- reCAPTCHA -->
-                        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
                         <button type="submit" class="btn">Pošalji</button>
+
+                        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
                     </form>
                 </div>
 
