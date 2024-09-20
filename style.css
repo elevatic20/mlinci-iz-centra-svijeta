@@ -175,8 +175,8 @@ nav {
 }
 
 .section-img img{
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: auto;
     object-fit: scale-down;
     display: felx;
     border-radius: 16px;
@@ -389,6 +389,25 @@ h2.products-title{
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/*proizvodnja*/
+.production-section{
+    background-color: var(--dark-red);
+    align-items: center;
+    text-align: center;
+}
+.production-title{
+    font-size: 2rem;
+    color: var(--wheat);
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.yt-video-production{
+    width: 1200px;
+    height: 678px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
 
 /* Stilovi za kontakt sekciju */
 .container {
@@ -399,13 +418,14 @@ h2.products-title{
 
 .contact-section {
     padding: 40px 0;
-    background-color: var(--dark-red);
+    background-color: var(--wheat);
 }
 
 .section-title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
+    color: var(--dark-red);
 }
 
 .contact-container {
@@ -592,6 +612,15 @@ h2.products-title{
 
     .close {
         font-size: 30px;
+    }
+
+    .production-section{
+        margin: 0;
+        padding: 0;
+    }
+    .yt-video-production{
+        width: auto;
+        height: 350px;
     }
 
 }
