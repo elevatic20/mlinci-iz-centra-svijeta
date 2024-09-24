@@ -130,18 +130,6 @@ nav {
     object-fit: cover; /* Zadrži proporcije videa */
 }
 
-.hero-text {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centriraj tekst */
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dodaj sjenu za bolju čitljivost */
-    z-index: 2; /* Podiže tekst iznad videa */
-}
-
 .hero::before {
     content: '';
     position: absolute;
