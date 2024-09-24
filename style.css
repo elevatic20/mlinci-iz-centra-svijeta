@@ -112,41 +112,45 @@ nav {
 
 /* Hero sekcija */
 .hero {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    background: var(--dark-red);
-    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Puni visinu ekrana */
+    overflow: hidden;
+}
+
+.heroVideo {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Zadrži proporcije videa */
 }
 
 .hero-text {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 1; /* Da tekst bude iznad slike */
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centriraj tekst */
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dodaj sjenu za bolju čitljivost */
+    z-index: 2; /* Podiže tekst iznad videa */
 }
 
-.hero-text h1 {
-    font-family: "Bell MT Semi Bold";
-    color: #d7b56d;
-    font-size: 5rem;
-}
-
-.hero-text p {
-    font-size: 1.5rem;
-}
-
-.hero-image {
-    flex: 2.5;
-}
-
-.hero-image img {
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: scale-down;
-    display: block;
+    background: rgba(0, 0, 0, 0.1); /* Zatamnjenje videa */
+    z-index: 1; /* Ispod teksta */
 }
 
 
@@ -546,31 +550,14 @@ h2.products-title{
         align-items: center;
     }
 
-    .hero {
-        flex-direction: column;
-    }
-
-    .hero-text {
-        margin-top: 25%;
-        padding: 20px;
-    }
-
-    .hero-image {
+    .heroVideo {
+        margin-top: 120px;
         width: 100%;
-        height: 300px; /* Visina slike na mobilnim uređajima */
+        height: auto;
     }
 
-    .hero-image img {
-        height: 100%;
-        object-fit: scale-down;
-    }
-
-    .hero h1 {
-        font-size: 3rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
+    .video-container{
+        height: 38vh;
     }
 
     .section{
