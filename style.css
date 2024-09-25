@@ -28,7 +28,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--dark-red-nav);
+    background: rgba(255,255,255,0);
     z-index: 1000;
     padding: 10px 20px;
     display: flex;
@@ -45,6 +45,9 @@ nav {
 
 /* Hamburger meni */
 .hamburger {
+    background:rgba(139,0,0,0.8);
+    padding: 10px;
+    border-radius: 16px;
     display: block;
     cursor: pointer;
 }
@@ -124,10 +127,9 @@ nav {
 }
 
 .heroVideo {
-    margin-top: 50px;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Zadrži proporcije videa */
+    object-fit:fill; /* Zadrži proporcije videa */
 }
 
 .hero::before {
@@ -533,6 +535,7 @@ h2.products-title{
 /* Responsivnost */
 @media screen and (max-width: 768px) {
     nav {
+        background: var(--dark-red);
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -550,6 +553,7 @@ h2.products-title{
 
     .section{
         flex-direction: column;
+        height: 80vh;
     }
 
     .section-img img{
