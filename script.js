@@ -1,3 +1,23 @@
+// Mute/Unmute hero video
+let video = document.getElementById("video1");
+var muted = true;
+
+function muteUnumte() {
+  if (muted == true) {
+    video.muted = false;
+    console.log("Video je stišan");
+    muted = false;
+  } else {
+    video.muted = true;
+    console.log("Video je drugo");
+    muted = true;
+  }
+}
+
+function checkMute() {
+  alert(video.muted);
+}
+
 // Toggle hamburger menu
 function toggleMenu() {
   const menu = document.getElementById("menu");
